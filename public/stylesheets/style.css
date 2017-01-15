@@ -1,12 +1,8 @@
       html, body {
         font-family: Arial, sans-serif;
         height: 100%;
-        margin: 20px;
+        margin: 0;
         padding: 0;
-      }
-      .container {
-        height: 100%;
-        position: relative;
       }
       input {
         font-size: 12px;
@@ -20,20 +16,23 @@
       hr {
         background: #D0D7D9;
         height: 1px;
-        margin: 20px 0 20px 0;
         border: none;
       }
-      #map {
-        width: 72%;
-        bottom:0px;
+      button {
+        width: 100%;
+        max-width: 100px;
+        margin: 5px;
+      }
+      .text {
+        font-size: 12px;
+      }
+      .container {
         height: 100%;
-        left: 30%;
-        position: absolute;
-        right: 0px;
+        position: relative;
       }
       .options-box {
-        background: #fff;
-        margin: 20px;
+        /*background: #fff;*/
+        margin-left: 50px;
         height: 100%;
         line-height: 35px;
         padding: 10px 10px 30px 10px;
@@ -41,26 +40,28 @@
         width: 25%;
         min-width: 100px;
       }
+      #map {
+        width: 72%;
+        bottom:0px;
+        height: 100%;
+        margin-left: 45%;
+        position: absolute;
+        right: 0px;
+      }
+      /*
+      */
       #pano {
         width: 200px;
         height: 200px;
       }
       #places-search,
       #search-within-time-text {
-        width: 84%;
-      }
-      .text {
-        font-size: 12px;
-      }
-      #toggle-drawing {
-        width: 27%;
-        position: relative;
-        margin-left: 10px;
+        width: 100%;
+        min-width: 100px;
       }
       #zoom-to-area-text {
-        width: 70%;
+        width: 100%;
+        min-width: 100px;
       }
-      #zoom-to-area {
-        width: 24%;
-      }
+      
    
