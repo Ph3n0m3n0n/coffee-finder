@@ -1,20 +1,13 @@
-<!-- To-Do's
-2. Add Geolocation if possible
-3. Fix side menu collapse view and map
-5. Add Auth0 with social logins -->
-
-
-
-     <div class="row">
+<div class="row">
       <div class="options-box">
         <h3 class="text-center">Search for coffee!</h3>
         <div class="row">
-	        <input id="places-search" type="text" placeholder="Ex. Starbucks">
-	        <button id="go-places" class="btn btn-primary col-md-6">GO</button>
+          <input id="places-search" type="text" placeholder="Ex. Starbucks">
+          <button id="go-places" class="btn btn-primary col-md-6">GO</button>
           <button id="show-listings" class="btn btn-primary col-md-6">Show All</button>      
-          <!-- <button id="hide-listings" class="btn btn-primary col-md-6">Hide</button> -->
-	      </div>
-	      <hr>
+          <button id="hide-listings" class="btn btn-primary col-md-6">Hide</button>
+        </div>
+        <hr>
         <div>
           <span class="text"> Within</span>
           <select id="max-duration">
@@ -35,15 +28,10 @@
         </div>
         <hr>
         <div>
-        <span class="text"> Draw a shape around an area to search for coffee shops near you!</span><br>
+          <p class="text-center"> Draw a shape around an area to search for coffee shops near you!</p>
           <button id="toggle-drawing" class="btn btn-default">Draw</button>
         </div>
-        <hr>
-        <div>
-          <input id="zoom-to-area-text" type="text" placeholder="Ex. Area"><br>
-          <button id="zoom-to-area" class="btn btn-default">Zoom</button>      
-      </div>
-      <!-- <div id="map"></div> -->
+      <div id="map"></div>
     </div>
   </div> 
     

@@ -1,5 +1,4 @@
-
-      var map;
+var map;
       // Create a new blank array for all the listing markers.
       var markers = [];
       // This global polygon variable is to ensure only ONE polygon is rendered.
@@ -77,7 +76,7 @@
         ];
         // Constructor creates a new map - only center and zoom are required.
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 40.7413549, lng: -73.9980244},
+          center: {lat: 26.212077, lng: -98.311370},
           zoom: 13,
           styles: styles,
           mapTypeControl: false
@@ -98,12 +97,11 @@
         // These are the real estate listings that will be shown to the user.
         // Normally we'd have these in a database instead.
         var locations = [
-          {title: 'Park Ave Penthouse', location: {lat: 40.7713024, lng: -73.9632393}},
-          {title: 'Chelsea Loft', location: {lat: 40.7444883, lng: -73.9949465}},
-          {title: 'Union Square Open Floor Plan', location: {lat: 40.7347062, lng: -73.9895759}},
-          {title: 'East Village Hip Studio', location: {lat: 40.7281777, lng: -73.984377}},
-          {title: 'TriBeCa Artsy Bachelor Pad', location: {lat: 40.7195264, lng: -74.0089934}},
-          {title: 'Chinatown Homey Space', location: {lat: 40.7180628, lng: -73.9961237}}
+          {title: 'Jitterz at CEED', location: {lat: 26.212077, lng: -98.311370}},
+          {title: 'Jitterz Coffee Bar', location: {lat: 26.222826, lng: -98.324582}},
+          {title: 'Union Square Open Floor Plan', location: {lat: 26.252575, lng: -98.221645}},
+          {title: 'East Village Hip Studio', location: {lat: 26.235326, lng: -98.225151}},
+          {title: 'The Garden Room', location: {lat: 26.224153, lng: -98.281765}}
         ];
         var largeInfowindow = new google.maps.InfoWindow();
         // Initialize the drawing manager.
@@ -550,4 +548,3 @@
         }
       });
     }
-
