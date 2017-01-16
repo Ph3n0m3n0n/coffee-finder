@@ -44,7 +44,8 @@ html, body {
         right: 0px;
       }
       #hide-listings,
-      #show-listings {
+      #show-listings
+       {
         width: 48%;
       }
       #pano {
