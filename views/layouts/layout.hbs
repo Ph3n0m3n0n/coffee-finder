@@ -17,25 +17,17 @@
       <div class="container">
         <a class="navbar-brand" href="/">Jitz</a>
         <ul class="nav navbar-nav navbar-right">
-          <li><a onclick="lock.show();">Login</a></li>
+          {{#if user}}
+            <li role="presentation"><a href="/users/logout">Logout, {{user.username}}</a></li>
+          {{else}}
+            <li role="presentation"><a href="/users/login">Login</a></li>
+            <li role="presentation"><a href="/users/register">Register</a></li>
+          {{/if}}
         </ul>
       </div>
     </nav>
 
     {{{body}}}
-
-  <script src="https://cdn.auth0.com/js/lock/10.9.1/lock.min.js"></script>
-    <script>
-      var lock = new Auth0Lock('sWVmzo6UIHBuKxBaK7X5pPMblB3sZ3aI', 'kantaris.auth0.com', {
-        auth: {
-          redirectUrl: 'http://localhost:3000',
-          responseType: 'code',
-          params: {
-            scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
-          }
-        }
-      });
-    </script>
 
   </body>
 </html>
