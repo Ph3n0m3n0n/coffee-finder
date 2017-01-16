@@ -99,9 +99,10 @@ var map;
         var locations = [
           {title: 'Jitterz at CEED', location: {lat: 26.212077, lng: -98.311370}},
           {title: 'Jitterz Coffee Bar', location: {lat: 26.222826, lng: -98.324582}},
-          {title: 'Union Square Open Floor Plan', location: {lat: 26.252575, lng: -98.221645}},
-          {title: 'East Village Hip Studio', location: {lat: 26.235326, lng: -98.225151}},
-          {title: 'The Garden Room', location: {lat: 26.224153, lng: -98.281765}}
+          {title: 'Cafe Grande', location: {lat: 26.191108, lng: -98.223630}},
+          {title: 'Starbucks on Jonquil', location: {lat: 26.235326, lng: -98.225151}},
+          {title: 'Moonbeans Coffee', location: {lat: 26.192469, lng: -98.185110}},
+          {title: 'Masterpiece Cafe', location: {lat: 26.245088, lng: -98.222292}}
         ];
         var largeInfowindow = new google.maps.InfoWindow();
         // Initialize the drawing manager.

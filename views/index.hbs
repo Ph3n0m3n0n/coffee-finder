@@ -1,15 +1,27 @@
-<div class="row">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee Finder</title>
+  </head>
+  <body>
+    <div class="container">
       <div class="options-box">
-        <h3 class="text-center">Search for coffee!</h3>
-        <div class="row">
-          <input id="places-search" type="text" placeholder="Ex. Starbucks">
-          <button id="go-places" class="btn btn-primary col-md-6">GO</button>
-          <button id="show-listings" class="btn btn-primary col-md-6">Show All</button>      
-          <button id="hide-listings" class="btn btn-primary col-md-6">Hide</button>
+        <h1>Find Your Nearest Coffee Shop</h1>
+        <div>
+          <input id="show-listings" type="button" value="Show All">
+          <input id="hide-listings" type="button" value="Hide All">
+          <hr>
+          <span class="text"> Draw a shape to search within an area!</span>
+          <input id="toggle-drawing"  type="button" value="Draw">
         </div>
         <hr>
         <div>
-          <span class="text"> Within</span>
+          <input id="zoom-to-area-text" type="text" placeholder="Enter your favorite area!">
+          <input id="zoom-to-area" type="button" value="Zoom">
+        </div>
+        <hr>
+        <div>
+          <span class="text"> Within </span>
           <select id="max-duration">
             <option value="10">10 min</option>
             <option value="15">15 min</option>
@@ -23,18 +35,24 @@
             <option value="TRANSIT">transit ride</option>
           </select>
           <span class="text">of</span>
-          <input id="search-within-time-text" type="text" placeholder="Ex. Address">
-          <button id="search-within-time" class="btn btn-primary">GO</button>
+          <input id="search-within-time-text" type="text" placeholder="Ex: Google Office NYC or 75 9th Ave, New York, NY">
+          <input id="search-within-time" type="button" value="Go">
         </div>
         <hr>
         <div>
-          <p class="text-center"> Draw a shape around an area to search for coffee shops near you!</p>
-          <button id="toggle-drawing" class="btn btn-default">Draw</button>
+          <span class="text">Search for nearby places</span>
+          <input id="places-search" type="text" placeholder="Ex: Pizza delivery in NYC">
+          <input id="go-places" type="button" value="Go">
         </div>
+      </div>
       <div id="map"></div>
     </div>
-  </div> 
-    
+    <script>
+      
+    </script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBA_lxOIlHw-H0AsY0blsGHAJV21LoNsEs&v=3&callback=initMap">
     </script>
+
+  </body>
+</html>
