@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Coffee Finder</title>
-  </head>
-  <body>
+
     <div class="container">
       <div class="options-box">
         <h1>Find Your Nearest Coffee Shop</h1>
         <div>
-          <!-- <input id="show-listings" type="button" value="Show All"> -->
           <button id="show-listings" class="btn btn-primary">Show All</button>
-          <!-- <input id="hide-listings" type="button" value="Hide All"> -->
           <button id="hide-listings" class="btn btn-primary">Hide All</button>
           <hr>
           <span class="text"> Draw a shape to search within an area!</span>
           <button id="toggle-drawing" class="btn btn-warning">Draw</button>
-          <!-- <input id="toggle-drawing"  type="button" value="Draw"> -->
         </div>
         <hr>
         <div>
           <input id="zoom-to-area-text" type="text" placeholder="Enter your favorite area!">
           <button id="zoom-to-area" class="btn btn-default">Zoom</button>
-          <!-- <input id="zoom-to-area" type="button" value="Zoom"> -->
         </div>
         <hr>
         <div>
@@ -40,7 +31,6 @@
           </select>
           <span class="text">of</span>
           <input id="search-within-time-text" type="text" placeholder="Ex: Jitterz Coffee Bar">
-          <!-- <input id="search-within-time" type="button" value="Go"> -->
           <button id="search-within-time" class="btn btn-primary">GO</button>
         </div>
         <hr>
@@ -48,17 +38,11 @@
           <span class="text">Search for nearby places</span>
           <input id="places-search" type="text" placeholder="Ex: Coffee Shops in McAllen">
           <button id="go-places" class="btn btn-primary">GO</button>
-          <!-- <input id="go-places" type="button" value="Go"> -->
         </div>
       </div>
       <div id="map"></div>
     </div>
-    <script>
-      
-    </script>
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyBA_lxOIlHw-H0AsY0blsGHAJV21LoNsEs&v=3&callback=initMap">
     </script>
 
-  </body>
-</html>
