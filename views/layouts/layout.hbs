@@ -17,10 +17,25 @@
       <div class="container">
         <a class="navbar-brand" href="/">Jitz</a>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://kantaris.auth0.com/login?client=lCVTWtocz4UuWp5IMqyHYJe9Qm4ot0fr">Sign in</a></li>
+          <li><a onclick="lock.show();">Login</a></li>
+        </ul>
       </div>
     </nav>
 
     {{{body}}}
+
+  <script src="https://cdn.auth0.com/js/lock/10.9.1/lock.min.js"></script>
+    <script>
+      var lock = new Auth0Lock('sWVmzo6UIHBuKxBaK7X5pPMblB3sZ3aI', 'kantaris.auth0.com', {
+        auth: {
+          redirectUrl: 'http://localhost:3000',
+          responseType: 'code',
+          params: {
+            scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
+          }
+        }
+      });
+    </script>
+
   </body>
 </html>
